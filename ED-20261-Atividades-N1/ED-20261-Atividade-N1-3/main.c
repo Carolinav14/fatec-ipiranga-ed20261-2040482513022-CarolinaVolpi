@@ -1,10 +1,13 @@
 /******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
+/*----------------------------------------------------------------------------------*/
+/*                                FATEC-Ipiranga                                    */        
+/*                            ADS - Estrutura de Dados                              */
+/*                             Id da Atividade: ATividade 3                         */
+/*             Objetivo: Atividade 3 - Pilha                                        */
+/*                                                                                  */
+/*                                  Autor: Carolina Volpi                            /
+/*                                                                   Data:dd/mm/2026*/
+/*----------------------------------------------------------------------------------*/
 *******************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
