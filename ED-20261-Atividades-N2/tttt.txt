@@ -1,1 +1,43 @@
+#include <stdio.h>
+#include "minhalib.h"
 
+typedef struct no{
+    int conteudo;
+    struct no*esq;
+    struct no* dir;
+}no;
+
+void analisar_arvores(no*pRaiz);
+
+
+void criarArvore(no **pRiz)
+{
+    *pRaiz=null;
+}
+ void insercao(no **praiz, int num)
+ {
+     if(*pRaiz == null)
+     {
+         *pRaiz =(no *)malloc(sizeof (no));
+         (*pRaiz)->esq = null;
+                  (*pRaiz)->dir = null;
+                           (*pRaiz)->num=num2;
+     }
+     else{ // a raiz
+        if(num2<((*pRaiz)->num))
+        {
+            insercao(&((*pRaiz)->esq),num2);
+         
+     }
+     else{
+         insercao(&((*pRaiz)->dir),num2);
+  }
+ }
+}
+
+
+
+
+
+    return 0;
+}
