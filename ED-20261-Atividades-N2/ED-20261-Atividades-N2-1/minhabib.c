@@ -28,7 +28,7 @@ No* buscar(No* raiz, int valor) {
     return buscar(raiz->dir, valor);
 }
 
-// Implementação das funções obrigatórias
+
 int calcular_altura(No* no) {
     if (no == NULL) return -1;
     int h_esq = calcular_altura(no->esq);
@@ -124,7 +124,7 @@ void analisar_arvore(No* raiz, int valorBusca) {
         return;
     }
 
-    printf("\n--- DIAGNOSTICO GERAL ---\n");
+    
     printf("Raiz: %d\n", raiz->valor);
     
     printf("Nos Internos: ");
@@ -138,7 +138,7 @@ void analisar_arvore(No* raiz, int valorBusca) {
     printf("Exibicao por Niveis:\n");
     imprimir_niveis(raiz, 0);
 
-    printf("\n--- DIAGNOSTICO ESPECIFICO (Valor: %d) ---\n", valorBusca);
+
     No* encontrado = buscar(raiz, valorBusca);
     if (encontrado) {
         int filhos = 0;
@@ -157,7 +157,7 @@ void analisar_arvore(No* raiz, int valorBusca) {
         printf("Altura: %d\n", calcular_altura(encontrado));
         printf("Profundidade: %d\n", calcular_profundidade(raiz, valorBusca, 0));
         
-        printf("\n--- EXTRACAO DE SUB-ARVORE ---\n");
+        printf("\n SUB-ARVORE \n");
         exibir_visual(encontrado, 0);
     } else {
         printf("Valor %d nao encontrado na arvore.\n", valorBusca);
