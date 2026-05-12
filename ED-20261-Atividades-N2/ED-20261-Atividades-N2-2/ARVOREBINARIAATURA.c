@@ -44,7 +44,7 @@ int calcularAltura(struct No* n) {
 }
 
 
-int FB(struct No* n) {
+int obterFB(struct No* n) {
     if (n == NULL) return 0;
     return calcularAltura(n->esq) - calcularAltura(n->dir);
 }
@@ -65,7 +65,7 @@ int main() {
 
     
     int h = calcularAltura(raiz);
-    int fb = FB(raiz);
+    int fb = obterFB(raiz);
 
     printf("\n--- VIZUALIZAÇÃO DA ARVORE ---\n");
     printf("Raiz da Arvore: %d\n", raiz->valor);
